@@ -11,10 +11,13 @@ import controller.ListaEncadeadaSimplesController;
 public class ListaEncadeadaSimples {
     public static void main(String[] args) {
         
+        try {
         ListaEncadeadaSimplesController obj = new ListaEncadeadaSimplesController();
         System.out.print(obj.teste());
-       
+        }
         
-        
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
